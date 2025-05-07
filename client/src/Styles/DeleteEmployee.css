@@ -1,0 +1,215 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    color: #333;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #0838d4;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 12px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a,
+  .dropdown-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .dropdown-btn:hover {
+    color: #f4c10f;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #294bc1;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+    color: #d00000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Form Container with Glass Effect */
+  .delete-form-container {
+    max-width: 500px;
+    max-height: 750px;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    background: rgba(17, 99, 131, 0);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Form Styling */
+  .delete-form h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  
+  .warning-message {
+    text-align: center;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Employee Details Layout */
+  .employee-details {
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .detail-row  {
+    display: flex;
+  
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .detail-row label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: white;
+    justify-content: space-between;
+}
+.detail-row input  {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+  
+}
+  .detail-value {
+    color: #f1f1f1;
+  
+  }
+  /* Buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .cancel-btn,
+  .delete-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+    min-width: 140px;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #5a6268;
+    transform: scale(1.03);
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.03);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .detail-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .cancel-btn,
+    .delete-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

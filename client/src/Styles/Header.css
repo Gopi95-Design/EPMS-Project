@@ -1,0 +1,110 @@
+/* Header.css */
+
+/* General container padding */
+.container-fluid {
+  padding: 0;
+  
+}
+
+/* Navbar styling */
+.navbar {
+  background-color:blue ;
+
+  backdrop-filter: blur(10px);
+  outline: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.50rem 2rem;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+/* Brand logo and name */
+.nav-linkk {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.nav-linkk:hover {
+  color: #5504d6;
+  text-decoration: none;
+}
+
+/* Logo image size */
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navbar links */
+.nav-link {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  transition: color 0.3s;
+  
+}
+
+.nav-link:hover {
+  color: #0921f1 !important;
+  text-decoration: none;
+}
+
+/* Carousel image */
+.carosal {
+  width: 100%;
+  max-height: 605px;
+  object-fit:cover;
+  border-radius: 10x;
+  background-size: cover;
+  
+}
+
+/* Carousel container */
+.carousel-inner {
+  
+  overflow: hidden;
+}
+
+/* Carousel controls customization */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+      width: 30px;
+      height: 30px;
+  }
+
+  .nav-linkk {
+      font-size: 1.25rem;
+  }
+
+  .nav-link {
+      font-size: 0.95rem;
+  }
+
+  .carosal {
+      max-height: 300px;
+  }
+}

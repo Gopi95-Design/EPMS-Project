@@ -1,0 +1,91 @@
+/* Full-page layout */
+.logout-page {
+    min-height: 100vh;
+    background-color: #0a3a6956;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Logo styling */
+.logo {
+    height: 40px;
+    width: auto;
+    
+}
+
+/* Wrapper to center form */
+.form-wrapper {
+    height: calc(100vh - 70px);
+    background-color:rgba(12, 86, 155, 0.301);
+    padding: 2rem;
+}
+
+/* Logout form */
+.logout-form {
+    background-color: #13618060;
+    padding: 2.5rem 3rem;
+    border-radius: 7px;
+    border-color: white;
+    border-style: groove;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Logout label */
+.logout-label {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logout-btn,
+.cancel-btn {
+    padding: 0.6rem 1.4rem;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .logout-form {
+        padding: 2rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .logout-btn,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
