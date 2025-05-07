@@ -27,7 +27,7 @@ function Registration() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("localhost:4000/Register/apply/", formData);
+            await axios.post("https://epms-project-1.onrender.com/Register/apply/", formData);
             setFormData({
                 empid: "",
                 name: "",
