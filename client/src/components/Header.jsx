@@ -12,7 +12,7 @@ function Header() {
             <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg ">
                     <a href="/" className="nav-linkk text-rgb(7, 4, 34) ">
-                        <img className="logo" src={logo} alt="logo.png" /><h4>Employee Profile Management System</h4>
+                        <img className="logo" src={logo} alt="logo.png" /> <h4>Employee Profile Management System</h4>
                     </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
