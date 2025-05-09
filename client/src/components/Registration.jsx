@@ -27,7 +27,7 @@ function Registration() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("https://epms-project-1.onrender.com/Register/apply/", formData);
+            await axios.post("http://localhost:4000/Register/apply/", formData);
             setFormData({
                 empid: "",
                 name: "",
@@ -37,7 +37,8 @@ function Registration() {
                 email: "",
             });
             navigate("/list");
-        } catch (error) {
+        } 
+        catch (error) {
             console.error("Registration error:", error);
         }
     };

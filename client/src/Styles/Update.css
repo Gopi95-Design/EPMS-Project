@@ -13,12 +13,13 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #ffffff;
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-link {
@@ -98,9 +99,7 @@ body {
 
 .update-form-container {
     max-width: 500px;
-    max-height: 750px;
-    overflow: auto;
-    resize: both;
+    max-height: 950px;
     margin: 3rem auto;
     padding: 2rem 2.5rem;
     border-radius: 16px;

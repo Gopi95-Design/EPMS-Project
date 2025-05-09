@@ -1,6 +1,6 @@
 let express = require("express");
 let mongoose = require("mongoose");
-let cors = require ("cors");
+let cors = require("cors");
 let bodyParser = require("body-parser");
 
 // Express Route
@@ -31,6 +31,9 @@ app.use(
   }),
 );
 app.use(cors());
+
+
+
 app.post('/adminlogin', (req, res) => {
 const password=req.body.password
  AdminModel.findOne({ email: req.body.email })
@@ -47,7 +50,7 @@ const password=req.body.password
 
 })
 
-  app.use("/register",RegisterRoute,UpdateRoute,DeleteRoute)
+  app.use("/Register",RegisterRoute,UpdateRoute,DeleteRoute)
 
 // PORT
 const port = process.env.PORT || 4000;
